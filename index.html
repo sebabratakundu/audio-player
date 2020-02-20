@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            audio player
+        </title>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery_swipeupdown.js"></script>
+    </head>
+    <body>
+        <div id="player-box">
+            <header>
+                <img src="image/upload.png" alt="upload" id="upload-btn">
+                <audio id="audio-player"></audio>
+                <h6 id="song-name"></h6>
+            </header>
+            <footer>
+                <div id="control-box">
+                    <i class="fa fa-backward" style="font-size: 30px;color:white;" id="backward"></i>
+                    <div id="play-box"><i class="fa fa-play-circle" style="font-size: 70px;color : red;" id="play-pause"></i></div>
+                    <i class="fa fa-forward" style="font-size:30px;color:white;" id="forward"></i>
+
+                    <div id="progress">
+                        <div id="progress-bar"></div>
+                    </div>
+                </div>
+                <span id="duration"></span>
+            </footer>
+            <div id="playlist">
+                    <ul class="list-group playlist-ul">
+                        <li class="list-group-item font-weight-bold bg-dark text-light rounded-0 d-none playlist-li">
+                            PLAYLIST
+                            <i class="fa fa-plus-circle text-warning float-right add" style="font-size : 25px;"></i>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
